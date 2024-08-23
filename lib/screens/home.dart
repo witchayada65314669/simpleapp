@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 
 class Home extends StatelessWidget {
@@ -47,7 +49,10 @@ class Home extends StatelessWidget {
               }, child: Text("Elevate")),
             OutlinedButton(
               style: OutlinedButton.styleFrom(
-                
+                side: BorderSide(
+                  color: Colors.red,
+                  width: 2
+                )
               ),
               onPressed: () {}, child: Text("Outline"))
           ],
